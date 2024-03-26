@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { BehaviorSubject } from "rxjs";
 import { TodoInterface } from "../types/todo.interface";
+import { FilterEnum } from "../types/filter.enum";
 
 @Injectable()
 
@@ -11,6 +12,8 @@ export class TodoService {
 todos$ = new BehaviorSubject<TodoInterface[]>([]); //Behavior Subjects, we can change it and subscribe to it like observable
 // Define types whenever possible
 
+filer$ = new BehaviorSubject<FilterEnum>(FilterEnum.all); //We cannot send wrong data with enum
+// We are using rxStream for their userfullness
 
 addTodo(text : string) : void
 {

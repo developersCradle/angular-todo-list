@@ -1,10 +1,17 @@
 # Angular todo list
 
-![AngularTodo](angularTodo.JPG)
+<img src="todoProto.JPG" alt="alt text" width="500"/>
+
+Todo app for adding todos.
 
 You can choose which framework you want to use for todo app. [TodoMVC](https://todomvc.com/)
 
+<hr>
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+
 
 ## Development server
 
@@ -46,3 +53,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - Scalability, Data should be saved inside **service**, not component.
 - Behavior Subjects, we can change it and subscribe to it like observable.
     - Example here, with defined type `todos$ = new BehaviorSubject<TodoInterface[]>([]);`
+- Sometimes Angular does not pickup our new component, so better to restart it sometimes.
