@@ -31,3 +31,18 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
+
+# What i learned
+
+- Good naming practices for:
+    - Selector.
+    - Module structure, postfix our entity.
+        - *Service
+        - *Component
+        - *Module 
+    - In imports, absolute paths.
+- One-way binding.
+- Define types when possible to enforce safe coding. Also use voids when no return for function.
+- Scalability, Data should be saved inside **service**, not component.
+- Behavior Subjects, we can change it and subscribe to it like observable.
+    - Example here, with defined type `todos$ = new BehaviorSubject<TodoInterface[]>([]);`
